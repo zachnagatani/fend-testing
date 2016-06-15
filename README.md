@@ -4,7 +4,7 @@ The final project for Udacity's Front-End Nanodegree. This one is all about [Jas
 
 
 ## Run the Project
-Simply clone the repo with git clone https://github.com/zachnagatani/fend-testing.git and open `index.html`! All of the tests are contained in `jasmine/feedreader.js`.
+Simply clone the repo with `git clone https://github.com/zachnagatani/fend-testing.git` and open `index.html`! All of the tests are contained in `jasmine/feedreader.js`.
 
 
 
