@@ -34,6 +34,7 @@ $(function() {
          it('url properties are defined and are not empty', function() {
                 allFeeds.forEach(function(feed) {
                     expect(feed.url).toBeDefined();
+                    expect(feed.url).not.toBe(null);
                     expect(feed.url).not.toEqual('');
                 });
          });
@@ -46,6 +47,7 @@ $(function() {
         it('name properties are defined and are not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
+                expect(feed.name).not.toBe(null);
                 expect(feed.name).not.toEqual('');
             });
         });
@@ -93,7 +95,7 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         it('has at least one .entry element within the .feed container', function() {
-            expect($('.entry').length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
